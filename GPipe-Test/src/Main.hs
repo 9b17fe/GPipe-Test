@@ -24,7 +24,7 @@ main =
 
     -- Spew scroll info
     void . GLFW.setScrollCallback win . pure $
-        \dx dy -> printf "scroll dx%v dy%v on %v\n" dx dy
+        printf "scroll dx: %v dy: %v\n"
 
     -- Make a Render action that returns a PrimitiveArray for the cube
     let makePrimitives = do
